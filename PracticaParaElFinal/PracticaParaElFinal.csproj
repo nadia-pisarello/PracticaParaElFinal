@@ -44,6 +44,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -66,6 +67,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,37 +76,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EjercicioArchivos.cs" />
-    <Compile Include="EjercicioDataReaderDAdapter.cs" />
-    <Compile Include="EjercicioDataSetNoTipado.cs" />
-    <Compile Include="EjercicioDataSetTipado.cs">
-      <DependentUpon>EjercicioDataSetTipado.xsd</DependentUpon>
+    <Compile Include="EjercicioComboBox\ComboBoxForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EjercicioDataSetTipado.Designer.cs">
+    <Compile Include="EjercicioComboBox\ComboBoxForm.Designer.cs">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archivos.cs" />
+    <Compile Include="EjercicioComboBox\EjercicioComboBox.cs" />
+    <Compile Include="DataReaderDataAdapter.cs" />
+    <Compile Include="DataSetNoTipado.cs" />
+    <Compile Include="DataSetTipado.cs">
+      <DependentUpon>DataSetTipado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTipado.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EjercicioDataSetTipado.xsd</DependentUpon>
+      <DependentUpon>DataSetTipado.xsd</DependentUpon>
     </Compile>
-    <Compile Include="EjercicioDataTable.cs" />
-    <Compile Include="EjercicioEventoEventHandlerEventArgs.cs" />
-    <Compile Include="EjercicioColeccionesGenéricas.cs" />
-    <Compile Include="EjercicioDelegadoGenericosIncluidos.cs" />
-    <Compile Include="EjercicioDelegados.cs" />
-    <Compile Include="EjercicioEventoDelegado.cs" />
-    <Compile Include="EjercicioEventoEventHandler.cs" />
-    <Compile Include="EjercicioEventoTimer.cs" />
-    <Compile Include="EjercicioInterfaces.cs" />
-    <Compile Include="EjercicioArray00.cs" />
-    <Compile Include="EjercicioArray01.cs" />
-    <Compile Include="EjercicioBiblioteca.cs" />
-    <Compile Include="EjercicioDateTime.cs" />
-    <Compile Include="EjercicioLambda.cs" />
-    <Compile Include="EjercicioLINQ.cs" />
-    <Compile Include="EjercicioManejoFecha.cs" />
-    <Compile Include="EjercicioMetodoExtension.cs" />
-    <Compile Include="EjercicioSerializacionJson.cs" />
-    <Compile Include="EjercicioThreadTask.cs" />
-    <Compile Include="EjercicioThread.cs" />
+    <Compile Include="DataTable00.cs" />
+    <Compile Include="EventoEventHandlerEventArgs.cs" />
+    <Compile Include="ColeccionesGenéricas.cs" />
+    <Compile Include="DelegadoGenericosIncluidos.cs" />
+    <Compile Include="Delegados.cs" />
+    <Compile Include="EventoDelegado.cs" />
+    <Compile Include="EventoEventHandler.cs" />
+    <Compile Include="EventoTimer.cs" />
+    <Compile Include="Interfaces00.cs" />
+    <Compile Include="Array00.cs" />
+    <Compile Include="Array01.cs" />
+    <Compile Include="Biblioteca.cs" />
+    <Compile Include="DateTime00.cs" />
+    <Compile Include="Lambda00.cs" />
+    <Compile Include="LINQ00.cs" />
+    <Compile Include="ManejoFecha.cs" />
+    <Compile Include="MetodoExtension.cs" />
+    <Compile Include="SerializacionJson.cs" />
+    <Compile Include="ThreadTask00.cs" />
+    <Compile Include="Thread00.cs" />
     <Compile Include="IColeccionable.cs" />
     <Compile Include="Libro.cs" />
     <Compile Include="MetodoAnonimo.cs" />
@@ -122,22 +131,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="EjercicioDataSetTipado.xsc">
-      <DependentUpon>EjercicioDataSetTipado.xsd</DependentUpon>
+    <None Include="DataSetTipado.xsc">
+      <DependentUpon>DataSetTipado.xsd</DependentUpon>
     </None>
-    <None Include="EjercicioDataSetTipado.xsd">
+    <None Include="DataSetTipado.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EjercicioDataSetTipado.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetTipado.Designer.cs</LastGenOutput>
     </None>
-    <None Include="EjercicioDataSetTipado.xss">
-      <DependentUpon>EjercicioDataSetTipado.xsd</DependentUpon>
+    <None Include="DataSetTipado.xss">
+      <DependentUpon>DataSetTipado.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EjercicioComboBox\ComboBoxForm.resx">
+      <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

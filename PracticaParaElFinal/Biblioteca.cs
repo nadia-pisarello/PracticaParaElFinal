@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioBiblioteca
+    internal class Biblioteca
     {
         public static void MainFalso()
         {

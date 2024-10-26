@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioEventoEventHandler
+    internal class EventoEventHandler
     {
         // event + EventHandler
         public static void MainFalso()

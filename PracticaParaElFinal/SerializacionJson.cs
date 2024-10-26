@@ -7,9 +7,9 @@ using JsonSerializer = System.Text.Json.JsonSerializer; //para utilizar este paq
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioSerializacionJson
+    internal class SerializacionJson
     {
-        public static void MainFalso1()
+        public static void MainFalso()
         {
             Libro libro1 = new Libro()
             {

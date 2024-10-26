@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal static class EjercicioMetodoExtension    {
+    internal static class MetodoExtension    {
         public static void MainFalso()
         {
             int i = 6;            

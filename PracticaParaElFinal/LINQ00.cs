@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioLINQ
+    internal class LINQ00
     {
         public static void MainFalso()
         {

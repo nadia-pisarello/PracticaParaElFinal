@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioThreadTask
+    internal class ThreadTask00
     {
         public static void MainFalso()
         {
-            EjercicioThreadTask ejercicio = new EjercicioThreadTask();
+            ThreadTask00 ejercicio = new ThreadTask00();
             ejercicio.Ejecutar();
             Console.ReadLine(); // Mantener la consola abierta
         }

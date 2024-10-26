@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioDateTime
+    internal class DateTime00
     {
-        public static void MainFalso3()
+        public static void MainFalso()
         {
             DateTime dt1 = DateTime.Now; 
             DateTime dt2 = new DateTime(2024, 09, 04, 15,0,0);

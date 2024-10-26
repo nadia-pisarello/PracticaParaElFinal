@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioManejoFecha
+    internal class ManejoFecha
     {
-        public static void MainFalso5()
+        public static void MainFalso()
         {
             DateTime fechaA, fechaB;
             Console.WriteLine("Ingrese fecha de inicio. Formato dd/mm/aaaa.\n");

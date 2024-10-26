@@ -4,9 +4,9 @@ using System;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioArray01
+    internal class Array01
     {
-        public static void MainFalso2()
+        public static void MainFalso()
         {
             int[,] arr = new int[2, 3] { { 2, 3, 5 } , { 0, -1, -2 } }; // Crea un arreglo de dos dimensiones
             for (int i = 0; i < arr.GetLength(0); i++)

@@ -7,7 +7,7 @@ using System.Timers;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioEventoTimer
+    internal class EventoTimer
     {
         static Timer t = new Timer();
         public static void MainFalso()

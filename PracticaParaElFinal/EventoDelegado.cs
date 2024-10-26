@@ -9,7 +9,7 @@ public delegate void Notificar(); //Declaración del tipo delegado
 namespace PracticaParaElFinal
 {
     // event + delegate
-    internal class EjercicioEventoDelegado // Clase Suscriptora
+    internal class EventoDelegado // Clase Suscriptora
     {
         public static void MainFalso()
         { /* cuando el publicador dispara el evento lo que hace es ejecutar el EventHandler,

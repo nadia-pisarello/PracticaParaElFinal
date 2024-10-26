@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    public class EjercicioDataTable
+    public class DataTable00
     {
         public static void MainFalso()
         {

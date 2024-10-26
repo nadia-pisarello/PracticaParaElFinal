@@ -6,7 +6,7 @@ namespace PracticaParaElFinal
 {
 
 
-    partial class EjercicioDataSetTipado
+    partial class DataSetTipado
     {
         partial class DataTable1DataTable
         {

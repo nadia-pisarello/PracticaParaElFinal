@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioDataReaderDAdapter
+    internal class DataReaderDataAdapter
     {
         public static void MainFalso()
         {

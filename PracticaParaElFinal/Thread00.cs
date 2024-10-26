@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioThread
+    internal class Thread00
     {    
         public static void MainFalso()
         {

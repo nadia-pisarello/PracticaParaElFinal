@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioModa
+    internal class Moda
     {
-        public static void MainFalso4 (){
+        public static void MainFalso (){
             int[] arr = { 1, 1, 1, 2, 3, 3, 4, 5, 6 };
             int[] arr2 = { 1, 1, 1, 2, 3, 3, 3, 3, 4, 5, 6 };
             ModaBucle(arr2);

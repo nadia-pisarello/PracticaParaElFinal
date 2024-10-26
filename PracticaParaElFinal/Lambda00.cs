@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioLambda
+    internal class Lambda00
     {
         // Declaración delegado
         public delegate bool EsFinDeSemana(DateTime dt);

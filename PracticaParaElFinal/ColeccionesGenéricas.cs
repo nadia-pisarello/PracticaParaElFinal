@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioColeccionesGenéricas
+    internal class ColeccionesGenéricas
     {
         public static void MainFalso()
         {

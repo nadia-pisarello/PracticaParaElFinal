@@ -8,7 +8,7 @@ namespace PracticaParaElFinal
 {
     //Declaración del tipo
     public delegate void MiDelegado(string message);
-    internal class EjercicioDelegados
+    internal class Delegados
     {
         public static void MainFalso()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioDelegadoGenericosIncluidos
+    internal class DelegadoGenericosIncluidos
     {
         // Declaración delegado genérico
         // Debe ser estático para que esté en el mismo contexto.

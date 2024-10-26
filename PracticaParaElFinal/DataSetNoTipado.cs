@@ -4,7 +4,7 @@ using System.Data.Common;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioDataSetNoTipado
+    internal class DataSetNoTipado
     {
         public static void MainFalso()
         {
@@ -28,10 +28,10 @@ namespace PracticaParaElFinal
         static DataTable[] CrearTablas()
         {
             DataTable[] dt;
-            DataTable tablaInventario = EjercicioDataTable.CrearTabla();
-            EjercicioDataTable.CrearColumnaID(tablaInventario);
-            EjercicioDataTable.CrearOtrasColumnas(tablaInventario);
-            EjercicioDataTable.AgregarFilas(tablaInventario);
+            DataTable tablaInventario = DataTable00.CrearTabla();
+            DataTable00.CrearColumnaID(tablaInventario);
+            DataTable00.CrearOtrasColumnas(tablaInventario);
+            DataTable00.AgregarFilas(tablaInventario);
             DataColumn clienteIdFK = new DataColumn("ClienteIDFK", typeof(int));
             tablaInventario.Columns.Add(clienteIdFK);
             DataTable tablaCliente = new DataTable("Cliente");

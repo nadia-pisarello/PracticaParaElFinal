@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioInterfaces
+    internal class Interfaces00
     {
         public static void MainFalso()
         {

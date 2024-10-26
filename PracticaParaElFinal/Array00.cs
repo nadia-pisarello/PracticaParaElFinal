@@ -3,16 +3,16 @@ using System.IO.Ports;
 
 namespace PracticaParaElFinal
 {
-    internal class EjercicioArray00
+    internal class Array00
     {
         public static void MainFalso()
         {
             int[] arr = { 1, 4, 5 };
             System.Console.WriteLine("En Main, antes de llamar al método ChangeForValue, primer elemento: {0}", arr[0]);
-            EjercicioArray00.ChangeForValue(arr);
+            Array00.ChangeForValue(arr);
             System.Console.WriteLine("En Main, después de llamar al método ChangeForValue y antes de ChangeForRef, primer elemento: {0}", arr[0]);
             System.Console.WriteLine("En Main, antes de llamar al método ChangeForRef. Arreglo: " + "{ " + string.Join(", ", arr) + " }");
-            EjercicioArray00.ChangeForRef(ref arr);
+            Array00.ChangeForRef(ref arr);
             System.Console.WriteLine("En Main, después de llamar al método ChangeForRef. Arreglo: " + "{ " + string.Join(", ", arr) + " }");
         }
         public static void ChangeForValue(int[] pArray)
