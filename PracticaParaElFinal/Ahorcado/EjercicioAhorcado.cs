@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace PracticaParaElFinal
+namespace PracticaParaElFinal.Ahorcado
 {
-    internal class EjercicioComboBox
+    internal class EjercicioAhorcado
     {
         [STAThread]
         public static void MainFalso()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ComboBoxForm());
+            Application.Run(new AhorcadoForm());
             // Código de consola después del formulario
             Console.WriteLine("Formulario cerrado. Continúa la ejecución de la consola.");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

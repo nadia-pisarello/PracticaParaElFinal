@@ -91,7 +91,7 @@ namespace PracticaParaElFinal
                     Turno turno = new Turno
                    {
                        PacienteId = Convert.ToInt32(reader["pacienteId"]),
-                       FechaTurno = (DateTime.Parse(reader["fechaTurno"].ToString())).To,
+                       FechaTurno = (DateTime.Parse(reader["fechaTurno"].ToString())),
                        HoraTurno = DateTime.Parse(reader["horaTurno"].ToString()),
                        Motivo = reader["motivo"].ToString(),
                    };

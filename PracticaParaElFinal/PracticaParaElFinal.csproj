@@ -76,6 +76,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ahorcado\AhorcadoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahorcado\AhorcadoForm.Designer.cs">
+      <DependentUpon>AhorcadoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahorcado\EjercicioAhorcado.cs" />
+    <Compile Include="EjercicioCuentaBancaria.cs" />
     <Compile Include="EjercicioComboBox\ComboBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +157,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ahorcado\AhorcadoForm.resx">
+      <DependentUpon>AhorcadoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EjercicioComboBox\ComboBoxForm.resx">
       <DependentUpon>ComboBoxForm.cs</DependentUpon>
     </EmbeddedResource>
