@@ -110,6 +110,7 @@
     <Compile Include="EventoDelegado.cs" />
     <Compile Include="EventoEventHandler.cs" />
     <Compile Include="EventoTimer.cs" />
+    <Compile Include="Genericos.cs" />
     <Compile Include="Interfaces00.cs" />
     <Compile Include="Array00.cs" />
     <Compile Include="Array01.cs" />

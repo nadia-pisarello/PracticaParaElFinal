@@ -13,14 +13,14 @@ namespace PracticaParaElFinal
         {
             FileInfo f = new FileInfo(@"Test.dat");
             FileInfo f2 = new FileInfo(@"Test2.dat");
-            //FileStream fs = f.Open(FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream fs = f.Open(FileMode.OpenOrCreate, FileAccess.Read);
             //fs.Close();
             //AccederNavegarConDirectoryInfo();
             //AccederNavegarConDirectoryInfoYFile();
             //AccederNavegarConFileInfo(f, f2); // método que llama al método LeerEscribirConFileStream
-            //LeerConFileStream(fs);
+            LeerConFileStream(fs);
             //AccederNavegarMoverConDirectory();
-            CopiarArchivo(f);
+            //CopiarArchivo(f);
 
         }
 
@@ -71,9 +71,9 @@ namespace PracticaParaElFinal
 
         static void AccederNavegarConFileInfo(FileInfo f, FileInfo f2) 
         {            
-            FileStream fs = f.Create(); // para crear un nuevo archivo          
+            var fs = f.Create(); // para crear un nuevo archivo, retorna un FileStream     
             // Usar el objeto FileStream
-            EscribirConFileStream(fs);
+            EscribirConFileStream(fs); 
             fs.Close();            
             using (FileStream fs2 = f2.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None))
             {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace PracticaParaElFinal
@@ -17,6 +18,7 @@ namespace PracticaParaElFinal
             //CrearBiblioteca();
             CargarRegistroPacientes();
             datosCargados=true;
+            Debug.WriteLine("quiero ver por consola"); // para ver por consola en el cuadro de Salida Ctrl+W,O
 
         }
 

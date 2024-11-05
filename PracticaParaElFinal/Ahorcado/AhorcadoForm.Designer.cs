@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbxJugador = new System.Windows.Forms.TextBox();
+            this.lbJugador = new System.Windows.Forms.Label();
             this.btnGuardarPartida = new System.Windows.Forms.Button();
             this.lbCantidadPalabrasDescubiertas = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,8 +47,7 @@
             this.btnIniciar = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.lbJugador = new System.Windows.Forms.Label();
-            this.tbxJugador = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +73,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(779, 531);
             this.panel1.TabIndex = 0;
+            // 
+            // tbxJugador
+            // 
+            this.tbxJugador.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbxJugador.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxJugador.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.tbxJugador.Location = new System.Drawing.Point(479, 25);
+            this.tbxJugador.Name = "tbxJugador";
+            this.tbxJugador.Size = new System.Drawing.Size(278, 46);
+            this.tbxJugador.TabIndex = 16;
+            this.tbxJugador.Text = "Ingresa tu nombre...";
+            this.tbxJugador.TextChanged += new System.EventHandler(this.tbxJugador_TextChanged);
+            // 
+            // lbJugador
+            // 
+            this.lbJugador.AutoSize = true;
+            this.lbJugador.BackColor = System.Drawing.SystemColors.Menu;
+            this.lbJugador.Font = new System.Drawing.Font("Yu Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJugador.Location = new System.Drawing.Point(389, 36);
+            this.lbJugador.Name = "lbJugador";
+            this.lbJugador.Size = new System.Drawing.Size(84, 26);
+            this.lbJugador.TabIndex = 15;
+            this.lbJugador.Text = "Jugador";
             // 
             // btnGuardarPartida
             // 
@@ -109,10 +133,10 @@
             // lbMensajes
             // 
             this.lbMensajes.AutoSize = true;
-            this.lbMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMensajes.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMensajes.Location = new System.Drawing.Point(48, 426);
             this.lbMensajes.Name = "lbMensajes";
-            this.lbMensajes.Size = new System.Drawing.Size(0, 29);
+            this.lbMensajes.Size = new System.Drawing.Size(0, 47);
             this.lbMensajes.TabIndex = 11;
             this.lbMensajes.Visible = false;
             // 
@@ -210,28 +234,9 @@
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // lbJugador
+            // openFileDialog1
             // 
-            this.lbJugador.AutoSize = true;
-            this.lbJugador.BackColor = System.Drawing.SystemColors.Menu;
-            this.lbJugador.Font = new System.Drawing.Font("Yu Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbJugador.Location = new System.Drawing.Point(389, 36);
-            this.lbJugador.Name = "lbJugador";
-            this.lbJugador.Size = new System.Drawing.Size(84, 26);
-            this.lbJugador.TabIndex = 15;
-            this.lbJugador.Text = "Jugador";
-            // 
-            // tbxJugador
-            // 
-            this.tbxJugador.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tbxJugador.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxJugador.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.tbxJugador.Location = new System.Drawing.Point(479, 25);
-            this.tbxJugador.Name = "tbxJugador";
-            this.tbxJugador.Size = new System.Drawing.Size(278, 46);
-            this.tbxJugador.TabIndex = 16;
-            this.tbxJugador.Text = "Ingresa tu nombre...";
-            this.tbxJugador.TextChanged += new System.EventHandler(this.tbxJugador_TextChanged);
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // AhorcadoForm
             // 
@@ -267,5 +272,6 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox tbxJugador;
         private System.Windows.Forms.Label lbJugador;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

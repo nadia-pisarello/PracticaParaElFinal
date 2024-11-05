@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PracticaParaElFinal
 {
-    internal class ColeccionesGenéricas
+    internal class ColeccionesGenéricas 
     {
         public static void MainFalso()
         {
@@ -19,7 +19,7 @@ namespace PracticaParaElFinal
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            foreach (Persona p in personas)
+            foreach (Persona p in personas) // Todas las colecciones poseen un enumerador que permite recorrerlas. Normalmente se usa foreach
             {
                 Console.WriteLine(p.ToString());
             }

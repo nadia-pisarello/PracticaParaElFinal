@@ -18,8 +18,10 @@ namespace PracticaParaElFinal
             //DateTime00.MainFalso();
             //ManejoFecha.MainFalso();
             //Biblioteca.MainFalso();
-            //Interfaces00.MainFalso();
+            /* Interfaces00 contiene: Interfaces - Implementación implícita y explícita - palabras reservadas 'as' y 'is'*/
+            //Interfaces00.MainFalso();            
             //ColeccionesGenéricas.MainFalso();
+            /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox*/
             //EjercicioComboBox.MainFalso();
             //Archivos.MainFalso();
             //SerializacionJson.MainFalso();
@@ -43,7 +45,7 @@ namespace PracticaParaElFinal
             //await PatronAsincronismo.MainFalso();
 
             //EjercicioCuentaBancaria.MainFalso();
-            //EjercicioAhorcado.MainFalso();
+            EjercicioAhorcado.MainFalso();
 
 
             Console.ReadKey();
