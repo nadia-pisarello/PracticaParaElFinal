@@ -11,9 +11,9 @@ namespace PracticaParaElFinal
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ComboBoxForm());
-            // Código de consola después del formulario
-            Console.WriteLine("Formulario cerrado. Continúa la ejecución de la consola.");
-            Console.ReadLine();
+            //// Código de consola después del formulario
+            //Console.WriteLine("Formulario cerrado. Continúa la ejecución de la consola.");
+            //Console.ReadLine();
         }
     }
 }

@@ -10,8 +10,13 @@ namespace PracticaParaElFinal
     {
         public static void MainFalso()
         {
+            // Implícita - Sólo se coloca el nombre del método, que debe ser el mismo que el de la interfaz
+            // Se accede a través de la clase
             Hexagono hex = new Hexagono("Hexagono1");
             Console.WriteLine($"Vertices: {hex.Vertices}");
+
+            // Explícita, se indica de qué intrerfaz se implementa.
+            // Se acceden siempre a través de la interfaz
             IControl c = hex;
             c.Dibujar();
             ISuperficie s = hex;
@@ -26,8 +31,9 @@ namespace PracticaParaElFinal
             for (int i = 0; i < misFiguras.Length; i++)
             {
                 misFiguras[i].Dibujar();
+                IVertice v = misFiguras[i] as IVertice;
                 if (misFiguras[i] is IVertice) //'is' permite determinar dinámicamente si objeto implementa interfaz IVertice
-                    Console.WriteLine($"-> Veértices: {((IVertice)misFiguras[i]).Vertices}");
+                    Console.WriteLine($"-> Vértices: {v.Vertices}");
                 else
                     Console.WriteLine($"-> {misFiguras[i].Nombre} no tiene vértices");
             }
@@ -67,17 +73,18 @@ namespace PracticaParaElFinal
         }
     }
 
+    // Herencia: primero se llaman a las clases luego a las interfaces
     internal class Hexagono : Figura, IVertice, IControl, ISuperficie
     {
         public Hexagono(string nombre) : base(nombre) { }
         public Hexagono(string nombre, int lados, int perimetro, int area) : base(nombre, lados, perimetro, area) { }
         
-        public byte Vertices //Implementación implícita
+        public byte Vertices //Implementación implícita 
         {
             get { return 6; }
         }
 
-        void IControl.Dibujar() //Implementación explícita
+        void IControl.Dibujar() //Implementación explícita, debo decir de que interfaz proviene
         {
             Console.WriteLine("IControl.Dibujar"); 
         }

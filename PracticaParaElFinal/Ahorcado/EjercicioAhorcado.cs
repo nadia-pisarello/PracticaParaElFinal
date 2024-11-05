@@ -11,9 +11,9 @@ namespace PracticaParaElFinal.Ahorcado
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AhorcadoForm());
-            // Código de consola después del formulario
-            Console.WriteLine("Formulario cerrado. Continúa la ejecución de la consola.");
-            Console.ReadKey();
+            //// Código de consola después del formulario
+            //Console.WriteLine("Formulario cerrado. Continúa la ejecución de la consola.");
+            //Console.ReadKey();
         }
     }
 }

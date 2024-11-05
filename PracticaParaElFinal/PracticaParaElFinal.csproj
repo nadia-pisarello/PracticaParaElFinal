@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClasesMetodos.cs" />
     <Compile Include="Ahorcado\AhorcadoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,15 @@
       <DependentUpon>AhorcadoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Ahorcado\EjercicioAhorcado.cs" />
+    <Compile Include="PicoFermiBagel\HistorialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PicoFermiBagel\HistorialForm.Designer.cs">
+      <DependentUpon>HistorialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PicoFermiBagel\JugadorPFB.cs" />
+    <Compile Include="SealedClasesMiembros.cs" />
+    <Compile Include="StaticClasesMetodos.cs" />
     <Compile Include="EjercicioCuentaBancaria.cs" />
     <Compile Include="EjercicioComboBox\ComboBoxForm.cs">
       <SubType>Form</SubType>
@@ -110,6 +120,7 @@
     <Compile Include="EventoDelegado.cs" />
     <Compile Include="EventoEventHandler.cs" />
     <Compile Include="EventoTimer.cs" />
+    <Compile Include="Genericos.cs" />
     <Compile Include="Interfaces00.cs" />
     <Compile Include="Array00.cs" />
     <Compile Include="Array01.cs" />
@@ -119,6 +130,13 @@
     <Compile Include="LINQ00.cs" />
     <Compile Include="ManejoFecha.cs" />
     <Compile Include="MetodoExtension.cs" />
+    <Compile Include="PicoFermiBagel\EjercicioPicoFermiBagel.cs" />
+    <Compile Include="PicoFermiBagel\PicoFermiBagelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PicoFermiBagel\PicoFermiBagelForm.Designer.cs">
+      <DependentUpon>PicoFermiBagelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SerializacionJson.cs" />
     <Compile Include="ThreadTask00.cs" />
     <Compile Include="Thread00.cs" />
@@ -162,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EjercicioComboBox\ComboBoxForm.resx">
       <DependentUpon>ComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PicoFermiBagel\HistorialForm.resx">
+      <DependentUpon>HistorialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PicoFermiBagel\PicoFermiBagelForm.resx">
+      <DependentUpon>PicoFermiBagelForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

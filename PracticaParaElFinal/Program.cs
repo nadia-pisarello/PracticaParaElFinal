@@ -1,5 +1,6 @@
 ﻿
 using PracticaParaElFinal.Ahorcado;
+using PracticaParaElFinal.PicoFermiBagel;
 using System;
 
 namespace PracticaParaElFinal
@@ -18,8 +19,15 @@ namespace PracticaParaElFinal
             //DateTime00.MainFalso();
             //ManejoFecha.MainFalso();
             //Biblioteca.MainFalso();
+            //AbstractClasesMetodos.MainFalso();
+            //SealedClasesMiembros.MainFalso();
+            /* StaticClasesMetodoss contiene: Clases estáticas, miembros estáticos
+             Patrón Singleton */
+            //StaticClasesMetodos.MainFalso();
+            /* Interfaces00 contiene: Interfaces - Implementación implícita y explícita - palabras reservadas 'as' y 'is'*/
             //Interfaces00.MainFalso();
             //ColeccionesGenéricas.MainFalso();
+            /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox*/
             //EjercicioComboBox.MainFalso();
             //Archivos.MainFalso();
             //SerializacionJson.MainFalso();
@@ -44,6 +52,7 @@ namespace PracticaParaElFinal
 
             //EjercicioCuentaBancaria.MainFalso();
             //EjercicioAhorcado.MainFalso();
+            EjercicioPicoFermiBagel.MainFalso();
 
 
             Console.ReadKey();
