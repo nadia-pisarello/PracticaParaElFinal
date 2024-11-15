@@ -1,7 +1,10 @@
 ﻿
 using PracticaParaElFinal.Ahorcado;
+using PracticaParaElFinal.JuegoMemoria;
 using PracticaParaElFinal.PicoFermiBagel;
+using PracticaParaElFinal.Recetario;
 using System;
+using JuegoMemoria;
 
 namespace PracticaParaElFinal
 {
@@ -52,10 +55,12 @@ namespace PracticaParaElFinal
 
             //EjercicioCuentaBancaria.MainFalso();
             //EjercicioAhorcado.MainFalso();
-            EjercicioPicoFermiBagel.MainFalso();
+            //EjercicioPicoFermiBagel.MainFalso();
+            //EjercicioRecetario.MainFalso();
+            /* Practicando la utilización de dos proyectos en una sola solución */
+            //global::JuegoMemoria.Program.Main();
 
-
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

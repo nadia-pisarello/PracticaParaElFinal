@@ -36,7 +36,8 @@ namespace PracticaParaElFinal.PicoFermiBagel
                 MessageBox.Show("Debes ingresar tu nombre antes de iniciar");
                 return;
             }
-            SeleccionarNumero();
+            //SeleccionarNumero();
+            numeroSecreto = "377";
             HabilitarBotones();
             iniciarToolStripMenuItem.Enabled = false;
             puntaje = 0;
@@ -84,7 +85,6 @@ namespace PracticaParaElFinal.PicoFermiBagel
                 case 2: tbxDigito3.Text = numeroJugador[2].ToString(); break;
             }
             indxNumJugador++;
-            //tboxJugador.Text = numeroJugador.ToString();
         }
 
         void EnviarNumero_Click(object sender, EventArgs e)
@@ -104,8 +104,7 @@ namespace PracticaParaElFinal.PicoFermiBagel
                     case 1: tbxDigito2.Text = ""; break;
                     case 2: tbxDigito3.Text = ""; break;
                 }
-            }
-            //tboxJugador.Text = numeroJugador.ToString();
+            }           
         }
 
         void MostrarPistas()
@@ -116,7 +115,7 @@ namespace PracticaParaElFinal.PicoFermiBagel
                 {
                     listTbxPistas[i].Text = $"{numeroJugador[i]}: {pistas[0]}";
                 }
-                else if (numeroSecreto.Contains(numeroJugador[i].ToString()) )
+                else if (numeroSecreto.Contains(numeroJugador[i].ToString()) && listTbxPistas[i].Text != pistas[0].ToString() )
                 {
                     listTbxPistas[i].Text = $"{numeroJugador[i]}: {pistas[1]}";
                 }

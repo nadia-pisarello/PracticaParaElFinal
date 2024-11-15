@@ -91,6 +91,14 @@
       <DependentUpon>HistorialForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PicoFermiBagel\JugadorPFB.cs" />
+    <Compile Include="Recetario\EjercicioRecetario.cs" />
+    <Compile Include="Recetario\Receta.cs" />
+    <Compile Include="Recetario\RecetarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recetario\RecetarioForm.Designer.cs">
+      <DependentUpon>RecetarioForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SealedClasesMiembros.cs" />
     <Compile Include="StaticClasesMetodos.cs" />
     <Compile Include="EjercicioCuentaBancaria.cs" />
@@ -187,6 +195,15 @@
     <EmbeddedResource Include="PicoFermiBagel\PicoFermiBagelForm.resx">
       <DependentUpon>PicoFermiBagelForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Recetario\RecetarioForm.resx">
+      <DependentUpon>RecetarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JuegoMemoria\JuegoMemoria.csproj">
+      <Project>{cbd6d587-c313-4ce8-b743-c9a891307615}</Project>
+      <Name>JuegoMemoria</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
