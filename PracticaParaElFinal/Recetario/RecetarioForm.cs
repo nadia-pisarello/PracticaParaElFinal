@@ -111,5 +111,11 @@ namespace PracticaParaElFinal.Recetario
             dgvRecetas.DataSource = null; // para limpiar lo anterior
             dgvRecetas.DataSource = recetaCategorizada;
         }
+
+        private void cerrarArchivo_Click(object sender, EventArgs e)
+        {
+            dgvRecetas.DataSource = null;
+            recetas.Clear();
+        }
     }
 }
