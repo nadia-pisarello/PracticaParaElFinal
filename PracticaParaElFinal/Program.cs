@@ -4,6 +4,7 @@ using PracticaParaElFinal.PicoFermiBagel;
 using PracticaParaElFinal.Recetario;
 using System;
 using JuegoMemoria;
+using Wordle_Sencillito;
 
 namespace PracticaParaElFinal
 {
@@ -55,9 +56,10 @@ namespace PracticaParaElFinal
             //EjercicioCuentaBancaria.MainFalso();
             //EjercicioAhorcado.MainFalso();
             //EjercicioPicoFermiBagel.MainFalso();
-            EjercicioRecetario.MainFalso();
+            //EjercicioRecetario.MainFalso();
             /* Practicando la utilización de dos proyectos en una sola solución */
             //global::JuegoMemoria.Program.Main();
+            global:: Wordle_Sencillito.Program.Main();
 
             //Console.ReadKey();
         }

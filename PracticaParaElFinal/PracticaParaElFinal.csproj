@@ -204,6 +204,10 @@
       <Project>{cbd6d587-c313-4ce8-b743-c9a891307615}</Project>
       <Name>JuegoMemoria</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wordle Sencillito\WordleSencillito.csproj">
+      <Project>{cfa37a2e-b758-48bf-a1f9-2413ccb9e43f}</Project>
+      <Name>WordleSencillito</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
