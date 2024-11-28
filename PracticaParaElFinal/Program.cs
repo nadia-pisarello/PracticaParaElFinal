@@ -16,8 +16,17 @@ namespace PracticaParaElFinal
         {
             //ProbandoCodigo00.MainFalso();
             //ProbandoHerenciaConstructor.MainFalso();
+            //ParametrosDeMetodos.MainFalso();
+            //ParametrosArgumentosNombrados.MainFalso();
+            //EnumeracionesYConstantes.MainFalso();
+            // Tipos Anidados - Usando una enumeración anidada
+            //EnumeracionesYConstantes.DiasByte dia = EnumeracionesYConstantes.DiasByte.Miercoles;
+            //EnumeracionesYConstantes.Meses mes = EnumeracionesYConstantes.Meses.Agosto;
+            //Console.WriteLine($"Día: {dia} - Valor: {(int)dia}");
+            //Console.WriteLine($"Mes: {mes} - Valor: {(int)mes}");
+
             //Array00.MainFalso();
-            //Array01.MainFalso();
+            Array01.MainFalso();
             //Moda.MainFalso();
             //DateTime00.MainFalso();
             //ManejoFecha.MainFalso();
@@ -57,11 +66,12 @@ namespace PracticaParaElFinal
             //EjercicioAhorcado.MainFalso();
             //EjercicioPicoFermiBagel.MainFalso();
             //EjercicioRecetario.MainFalso();
+
             /* Practicando la utilización de dos proyectos en una sola solución */
             //global::JuegoMemoria.Program.Main();
-            global:: Wordle_Sencillito.Program.Main();
+            //global:: Wordle_Sencillito.Program.Main();
 
-            //Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }

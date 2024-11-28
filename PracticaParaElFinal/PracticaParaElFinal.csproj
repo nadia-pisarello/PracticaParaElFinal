@@ -84,6 +84,9 @@
       <DependentUpon>AhorcadoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Ahorcado\EjercicioAhorcado.cs" />
+    <Compile Include="EnumeracionesYConstantes.cs" />
+    <Compile Include="ParametrosArgumentosNombrados.cs" />
+    <Compile Include="ParametrosDeMetodos.cs" />
     <Compile Include="PicoFermiBagel\HistorialForm.cs">
       <SubType>Form</SubType>
     </Compile>
