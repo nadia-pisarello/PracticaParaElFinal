@@ -13,14 +13,16 @@ namespace PracticaParaElFinal
         {
             FileInfo f = new FileInfo(@"Test.dat");
             FileInfo f2 = new FileInfo(@"Test2.dat");
-            FileStream fs = f.Open(FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream fs = f.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);
             //fs.Close();
             //AccederNavegarConDirectoryInfo();
             //AccederNavegarConDirectoryInfoYFile();
             //AccederNavegarConFileInfo(f, f2); // método que llama al método LeerEscribirConFileStream
-            LeerConFileStream(fs);
+            //LeerConFileStream(fs);
             //AccederNavegarMoverConDirectory();
             //CopiarArchivo(f);
+            EscribirConFileStream(fs);
+            fs.Close();
 
         }
 
@@ -81,11 +83,12 @@ namespace PracticaParaElFinal
                EscribirConFileStream(fs2);
             }
             
-        }       
-
+        }  
+       
         static void EscribirConFileStream(FileStream fs)
         {
-            using (StreamWriter sw = new StreamWriter(fs))
+            string ruta = fs.Name;
+            using (StreamWriter sw = new StreamWriter(ruta, true))
             {
                 sw.WriteLine("Agregar linea 1...");
                 sw.WriteLine("Agregar linea 2...");
@@ -95,6 +98,7 @@ namespace PracticaParaElFinal
                     sw.Write(i + " ");
                 }
                 sw.Write(sw.NewLine);
+                sw.WriteLine("Agrego otra linea");
             }
             Console.WriteLine("Archivo creado...");
             fs.Close();

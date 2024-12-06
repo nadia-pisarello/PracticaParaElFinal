@@ -103,6 +103,7 @@
       <DependentUpon>RecetarioForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SealedClasesMiembros.cs" />
+    <Compile Include="SerializacionBinaria.cs" />
     <Compile Include="StaticClasesMetodos.cs" />
     <Compile Include="EjercicioCuentaBancaria.cs" />
     <Compile Include="EjercicioComboBox\ComboBoxForm.cs">
@@ -206,6 +207,10 @@
     <ProjectReference Include="..\JuegoMemoria\JuegoMemoria.csproj">
       <Project>{cbd6d587-c313-4ce8-b743-c9a891307615}</Project>
       <Name>JuegoMemoria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaTeTi\TaTeTi.csproj">
+      <Project>{f406f06a-2b13-42fa-8574-31e8d0cd7c39}</Project>
+      <Name>TaTeTi</Name>
     </ProjectReference>
     <ProjectReference Include="..\Wordle Sencillito\WordleSencillito.csproj">
       <Project>{cfa37a2e-b758-48bf-a1f9-2413ccb9e43f}</Project>

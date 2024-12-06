@@ -12,7 +12,7 @@ namespace PracticaParaElFinal
     {
         [STAThread]
        static void Main(string[] args)
-       //static async Task Main() 
+       //static async Task MainFalso() 
         {
             //ProbandoCodigo00.MainFalso();
             //ProbandoHerenciaConstructor.MainFalso();
@@ -26,7 +26,7 @@ namespace PracticaParaElFinal
             //Console.WriteLine($"Mes: {mes} - Valor: {(int)mes}");
 
             //Array00.MainFalso();
-            Array01.MainFalso();
+            //Array01.MainFalso();
             //Moda.MainFalso();
             //DateTime00.MainFalso();
             //ManejoFecha.MainFalso();
@@ -42,7 +42,9 @@ namespace PracticaParaElFinal
             /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox*/
             //EjercicioComboBox.MainFalso();
             //Archivos.MainFalso();
+            SerializacionBinaria.MainFalso();
             //SerializacionJson.MainFalso();
+            //SerializacionJson.MainFalso2();
             //DataReaderDataAdapter.MainFalso();
             //DataSetNoTipado.MainFalso();
             //DataTable00.MainFalso();
@@ -59,7 +61,7 @@ namespace PracticaParaElFinal
             //Thread00.MainFalso();
             //ThreadTask00.MainFalso();
 
-            //Usar static async Task Main() cuando se quiera probar este código
+            //Usar static async Task MainFalso() cuando se quiera probar este código
             //await PatronAsincronismo.MainFalso();
 
             //EjercicioCuentaBancaria.MainFalso();
@@ -68,8 +70,9 @@ namespace PracticaParaElFinal
             //EjercicioRecetario.MainFalso();
 
             /* Practicando la utilización de dos proyectos en una sola solución */
-            //global::JuegoMemoria.Program.Main();
-            //global:: Wordle_Sencillito.Program.Main();
+            //global::JuegoMemoria.Program.MainFalso();
+            //global:: Wordle_Sencillito.Program.MainFalso();
+            //global:: TaTeTi.Program.MainFalso();
 
             Console.ReadKey();
         }

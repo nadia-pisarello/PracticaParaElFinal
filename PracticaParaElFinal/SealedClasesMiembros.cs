@@ -44,12 +44,12 @@ namespace PracticaParaElFinal
     public class Clase3 : Clase2
     {
         /* Esto da error - No se puede invalid/sobreescribir un metodo sellado
-         * protected override void Metodo1() { Console.WriteLine(); }
+         * public override void Metodo1() { Console.WriteLine(); }
          */
         
     }
 
-    /* Esto no se puede hacer. PruebaClaseSellada no puede derivar de ClaseSellada
+    /* Esto no se puede hacer. PruebaClaseSellada no puede derivar de ClaseSellada:
     public class PruebaHerenciaClaseSellada: ClaseSellada { }
     */
 }

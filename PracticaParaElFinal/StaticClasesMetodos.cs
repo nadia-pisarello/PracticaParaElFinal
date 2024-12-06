@@ -100,7 +100,7 @@ namespace PracticaParaElFinal
             /* Estas lineas dan error
             private string nombre; 
             public string Nombre { get =>  nombre; set => nombre = value; }
-               public void Imprimir()
+            public void Imprimir()
             {
                 Console.WriteLine("En la Clase Estática: Todos los miembros deben ser estáticos!");
             }

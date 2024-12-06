@@ -31,6 +31,13 @@ namespace PracticaParaElFinal
             {
                 Console.WriteLine(b.Describir());
             }
+            Console.WriteLine("\n================================== \n");
+            Console.WriteLine("libro1 es igual a libro2? {0}",Equals(libro1, libro2 ));
+            Libro libro5 = new Libro("Oda Ichiro", "One Piece Vol. 1");
+            Console.WriteLine("libro1 es igual a libro5? {0}", ReferenceEquals(libro1, libro5));
+            libro5 = libro1;
+            Console.WriteLine("libro1 es igual a libro5? {0}", ReferenceEquals(libro1, libro5));
+
         }
     }
 }
@@ -57,8 +64,8 @@ namespace PracticaParaElFinal
                  Describir(): Método que describe el libro (probablemente devuelve información como el título y el autor).
                  Libro: Esto parece hacer referencia al constructor de la clase Libro.
     4. Program (Clase):
-        Es la clase principal donde se encuentra el método Main, que es el punto de entrada de la aplicación.
-        El método Main ejecutará el código, como crear instancias de Libro, almacenarlas en una colección y ordenarlas.
+        Es la clase principal donde se encuentra el método MainFalso, que es el punto de entrada de la aplicación.
+        El método MainFalso ejecutará el código, como crear instancias de Libro, almacenarlas en una colección y ordenarlas.
 ------------------------------------------------------------------------------------------------------------------------------------
     *** Ejercicio que debes realizar ***
     a - Crear la interfaz IColeccionable con las propiedades y métodos especificados.

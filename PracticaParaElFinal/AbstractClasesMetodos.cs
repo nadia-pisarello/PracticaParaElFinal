@@ -15,6 +15,7 @@ namespace PracticaParaElFinal
         }
         public abstract class ClaseAbstractaFiguras
         {
+            public static void Prueba() { /* Poner cuerpo aqui */}
             protected int vertice; // los campos no pueden ser abstractos
             abstract public int Area();
             /* El método Superficie No puede estar sellado por que es una invalidación (abstract)
