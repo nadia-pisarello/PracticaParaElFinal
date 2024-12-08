@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleSencillito", "Wordle 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi", "TaTeTi\TaTeTi.csproj", "{F406F06A-2B13-42FA-8574-31E8D0CD7C39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoreIpsum", "LoreIpsum\LoreIpsum.csproj", "{CF609ECF-95E9-48EF-85B3-A00C87C4C2AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{F406F06A-2B13-42FA-8574-31E8D0CD7C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F406F06A-2B13-42FA-8574-31E8D0CD7C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F406F06A-2B13-42FA-8574-31E8D0CD7C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF609ECF-95E9-48EF-85B3-A00C87C4C2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF609ECF-95E9-48EF-85B3-A00C87C4C2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF609ECF-95E9-48EF-85B3-A00C87C4C2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF609ECF-95E9-48EF-85B3-A00C87C4C2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

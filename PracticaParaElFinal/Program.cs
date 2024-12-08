@@ -42,10 +42,10 @@ namespace PracticaParaElFinal
             /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox*/
             //EjercicioComboBox.MainFalso();
             //Archivos.MainFalso();
-            SerializacionBinaria.MainFalso();
+            //SerializacionBinaria.MainFalso();
             //SerializacionJson.MainFalso();
             //SerializacionJson.MainFalso2();
-            //DataReaderDataAdapter.MainFalso();
+            DataReaderDataAdapter.MainFalso();
             //DataSetNoTipado.MainFalso();
             //DataTable00.MainFalso();
             //Delegados.MainFalso();

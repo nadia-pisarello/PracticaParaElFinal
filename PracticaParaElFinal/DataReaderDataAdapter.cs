@@ -15,12 +15,12 @@ namespace PracticaParaElFinal
             int idPaciente;
             MostrarPacientes();
             ContarRegistros();
-            //Console.WriteLine("Ingresar número de ficha a eliminar:");
-            //if (Int32.TryParse(Console.ReadLine(), out idPaciente))
-            //{
-            //    EliminarPaciente(idPaciente);
-            //}
-          
+            Console.WriteLine("Ingresar número de ficha a eliminar:");
+            if (Int32.TryParse(Console.ReadLine(), out idPaciente))
+            {
+                EliminarPaciente(idPaciente);
+            }
+
         }
 
         static string GetConnectionString()
@@ -75,11 +75,16 @@ namespace PracticaParaElFinal
                 DataTable pacientesTabla = new DataTable();
                 adapter.Fill(pacientesTabla);
                 // Definir la clave primaria en el DataTable
+                pacientesTabla.PrimaryKey = new DataColumn[] { pacientesTabla.Columns["id"] };
                 DataRow filaABorrar = pacientesTabla.Rows.Find(idPaciente);
-                if(filaABorrar != null)
+
+                if (filaABorrar != null)
                 {
                     filaABorrar.Delete();
-                    SqlCommandBuilder commandBuilder = new SqlCommandBuilder(adapter);
+                    // SqlCommandBuilder commandBuilder = new SqlCommandBuilder(adapter); 
+                    //se lo puede hacer de la anterior manera pero para no tener una asignacón
+                    //inncesaria lo podemos hacer solamente
+                    new SqlCommandBuilder(adapter);
                     // UpdateCommand se generá automáticamente por el SqlCommnadBuilder cuando se llama a Update
                     adapter.Update(pacientesTabla);
                     Console.WriteLine("Paciente eliminado con éxito");
