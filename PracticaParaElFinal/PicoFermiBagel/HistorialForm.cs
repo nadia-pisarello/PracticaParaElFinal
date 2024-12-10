@@ -15,6 +15,7 @@ namespace PracticaParaElFinal.PicoFermiBagel
     {
 
         List<JugadorPFB> jugadorPFBs = new List<JugadorPFB>();
+        BindingSource source = new BindingSource();
         public HistorialForm()
         {
             InitializeComponent();
@@ -42,23 +43,35 @@ namespace PracticaParaElFinal.PicoFermiBagel
                         string[] jugador = linea.Split('-');
                         if (jugador.Length == 3)
                         {
-                            jugadorPFBs.Add(new JugadorPFB(jugador[0], jugador[1], jugador[2]));
+                            try
+                            {
+                                jugadorPFBs.Add(new JugadorPFB(jugador[0], jugador[1], jugador[2]));
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show($"Error procesando línea: {linea}\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
                         }
                     };
                 }
-                MostrarDatos();
+                
             }
             if (jugadorPFBs.Count == 0)
             {
                 MessageBox.Show("No se encontraron datos válidos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
+            else
+            {
+                MostrarDatos();
+            }
 
         }
         void MostrarDatos()
         {          
-            IEnumerable<JugadorPFB> query = jugadorPFBs.OrderBy(jugadorPFB => jugadorPFB.Tiempo).ToList(); // convierte el resultado de la consulta LINQ a una lista      
-            dgvHistorial.DataSource = query;
+            source.DataSource = jugadorPFBs.OrderBy(jugadorPFB => jugadorPFB.Tiempo).ToList();
+            //IEnumerable<JugadorPFB> query = jugadorPFBs.OrderBy(jugadorPFB => jugadorPFB.Tiempo).ToList(); // convierte el resultado de la consulta LINQ a una lista      
+            dgvHistorial.DataSource = source;
         }
     }
 }

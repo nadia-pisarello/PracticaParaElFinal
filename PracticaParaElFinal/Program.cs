@@ -39,13 +39,13 @@ namespace PracticaParaElFinal
             /* Interfaces00 contiene: Interfaces - Implementación implícita y explícita - palabras reservadas 'as' y 'is'*/
             //Interfaces00.MainFalso();
             //ColeccionesGenéricas.MainFalso();
-            /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox*/
-            //EjercicioComboBox.MainFalso();
+            /* EjercicioComboBox contiene: SqlConnection - SqlCommand - SqlDataReader - ComboBox - Complex Binding*/
+            EjercicioComboBox.MainFalso();
             //Archivos.MainFalso();
             //SerializacionBinaria.MainFalso();
             //SerializacionJson.MainFalso();
             //SerializacionJson.MainFalso2();
-            DataReaderDataAdapter.MainFalso();
+            //DataReaderDataAdapter.MainFalso();
             //DataSetNoTipado.MainFalso();
             //DataTable00.MainFalso();
             //Delegados.MainFalso();
@@ -66,6 +66,7 @@ namespace PracticaParaElFinal
 
             //EjercicioCuentaBancaria.MainFalso();
             //EjercicioAhorcado.MainFalso();
+            /* En el siguiente juego utilizamos complex binding para cargar el historial */
             //EjercicioPicoFermiBagel.MainFalso();
             //EjercicioRecetario.MainFalso();
 

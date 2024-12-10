@@ -9,36 +9,18 @@ namespace PracticaParaElFinal
     public partial class ComboBoxForm : Form
     {
         string stringCn = "Data Source=MSI;Initial Catalog=consultas;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
         BindingSource binding = new BindingSource();
         bool datosCargados = false;
         public ComboBoxForm()
         {
             InitializeComponent();
-            //CrearBiblioteca();
+            //binding.DataSource = GetPacientes();
+            comboBox1.DataSource = binding;
             CargarRegistroPacientes();
-            datosCargados=true;
-            Debug.WriteLine("quiero ver por consola"); // para ver por consola en el cuadro de Salida Ctrl+W,O
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Libro item = (Libro)comboBox1.SelectedItem;
-            //MessageBox.Show(String.Format($"{item.Autor} - {item.Titulo}"));
-
-            if (datosCargados && comboBox1.SelectedItem is Paciente selectedPaciente)
-            {
-                CargarTurno(selectedPaciente.Id,stringCn);
-                //MessageBox.Show($"{selectedPaciente.Nombre} {selectedPaciente.Apellido}");
-            }
-        }
-
-        void CrearBiblioteca()
-        {
-            comboBox1.Items.Add(new Libro("Nami", "Bitacora"));
-            comboBox1.Items.Add(new Libro("Tony Tony Chopper", "Atlas de un Reno"));
-            comboBox1.Items.Add(new Libro("Nico Robin", "El Gran Río"));
+            /* Funciona con GetPacientes */
+            //comboBox1.ValueMember = "id";
+            //comboBox1.DisplayMember = "nombre";
+            datosCargados = true;
         }
 
         public void CargarRegistroPacientes()
@@ -57,10 +39,38 @@ namespace PracticaParaElFinal
                         Nombre = reader["nombre"].ToString(),
                         Apellido = reader["apellido"].ToString()
                     };
-                    comboBox1.Items.Add(paciente);
+                    binding.Add(paciente); // Agregar al BindingSource
                 }
-            }                    
+            }
         }
+
+        private DataTable GetPacientes()
+        {
+            SqlConnection cn = new SqlConnection(stringCn);
+            cn.Open();
+            SqlCommand cmd = new SqlCommand("Select id, nombre, apellido from pacientes",cn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            // Llenar DataTable
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "pacientes");
+            return ds.Tables["pacientes"];
+        }
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /* Funciona con CargarRegistroPacientes */
+            if (datosCargados && comboBox1.SelectedItem is Paciente selectedPaciente)
+            {
+                CargarTurno(selectedPaciente.Id, stringCn);
+            }
+
+            /* Funciona con GetPacientes */
+            //if (datosCargados && comboBox1.SelectedValue is int seletedId)
+            //{
+            //    CargarTurno(seletedId, stringCn);
+            //}
+        }
+
 
         public class Paciente
         {
@@ -97,8 +107,8 @@ namespace PracticaParaElFinal
                        HoraTurno = DateTime.Parse(reader["horaTurno"].ToString()),
                        Motivo = reader["motivo"].ToString(),
                    };
-                    MessageBox.Show($"{turno.FechaTurno} - {turno.HoraTurno}\n" +
-                        $"{turno.Motivo}");
+                    MessageBox.Show($"Fecha: {turno.FechaTurno} - Hora: {turno.HoraTurno}\n" +
+                        $"Motivo: {turno.Motivo}");
                 }
 
             }
