@@ -1,2 +1,1 @@
-# Practica realizada 
-## En .NET Framework - C#
+# Practica realizada en .NET Framework - C#
