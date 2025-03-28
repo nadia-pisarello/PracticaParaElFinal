@@ -1,2 +1,2 @@
-# Practica realizada para Programación 3
-## En .NET Framework
+# Practica realizada 
+## En .NET Framework - C#
